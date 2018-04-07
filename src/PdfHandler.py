@@ -9,7 +9,7 @@ class PdfHandler:
         tika.initVM()
         print('done.')
 
-    def read_file(self, file):
+    def read_file(self, file) -> str:
         print('file: ' + str(file))
         parsed = parser.from_file(file)
         print(parsed['metadata'])
